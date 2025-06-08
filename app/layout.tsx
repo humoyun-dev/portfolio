@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     siteName: "Humoyun.DEV Portfolio",
     images: [
       {
-        url: "/og-image.jpg", // You'll need to create this image
+        url: "/images/image1.jpeg", // You'll need to create this image
         width: 1200,
         height: 630,
         alt: "Humoyun.DEV - Full-Stack Software Developer",
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
     title: "Humoyun.DEV | Full-Stack Software Developer",
     description:
       "Passionate full-stack software developer from Tashkent, Uzbekistan. Creating clean, efficient, and maintainable code solutions.",
-    images: ["/og-image.jpg"], // Same image as OpenGraph
+    images: ["/images/image1.jpeg"], // Same image as OpenGraph
     creator: "@humoyundev", // Replace with your actual Twitter handle
   },
   robots: {
