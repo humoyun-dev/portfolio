@@ -104,7 +104,7 @@ export default function RootLayout({
         <StructuredData />
         <ThemeProvider
           attribute="class"
-          defaultTheme="light"
+          defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
