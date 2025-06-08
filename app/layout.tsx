@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/providers/theme.provider";
 import { StructuredData } from "@/lib/structured-data";
+import { Footer } from "@/components/custom/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -108,6 +109,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
+          <Footer/>
         </ThemeProvider>
       </body>
     </html>
