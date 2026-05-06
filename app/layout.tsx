@@ -5,6 +5,8 @@ import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/providers/theme.provider";
 import { StructuredData } from "@/lib/structured-data";
 import { Footer } from "@/components/custom/footer";
+import { Navigation } from "@/components/custom/navigation";
+import { ScrollProgress } from "@/components/custom/scroll-progress";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -99,7 +101,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <StructuredData />
         <ThemeProvider
@@ -108,6 +110,8 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <ScrollProgress />
+          <Navigation />
           {children}
           <Footer/>
         </ThemeProvider>
